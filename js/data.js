@@ -306,6 +306,55 @@ const RAW_PRODUCTS = {
       desc: "Set de tres brumas faciales veganas para refrescar, hidratar y dar luminosidad — el complemento perfecto de la rutina diaria.",
       ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
       uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
+    },
+    {
+      name: "Facial Spray Aloe & Cucumber & Green Tea", cat: "Tónicos & Esencias", real: true,
+      img: falabella("80603813_1"), contenido: "118 ml", isp: "1009C-1032/25",
+      desc: "Bruma facial refrescante y vegana con aloe vera calmante, té verde, agua de menta rica en antioxidantes y pepino hidratante.",
+      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
+    },
+    {
+      name: "Facial Spray Aloe & Chamomile", cat: "Tónicos & Esencias", real: true,
+      img: falabella("80603792_1"), contenido: "118 ml", isp: "1009C-1031/25",
+      desc: "Bruma facial vegana con antioxidantes y vitamina C, lavanda calmante, aloe vera hidratante, tomillo purificante y extracto de alga marina.",
+      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
+    },
+    {
+      name: "Facial Spray Aloe & Coconut", cat: "Tónicos & Esencias", real: true,
+      img: falabella("80603806_1"), contenido: "118 ml", isp: "1009C-1030/25",
+      desc: "Bruma facial vegana que hidrata piel delicada y seca con ácido hialurónico, agua de coco y extractos adaptógenos de plantas y raíces.",
+      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
+    },
+    {
+      name: "Facial Spray Aloe, Sage & Orange", cat: "Tónicos & Esencias", real: true,
+      img: falabella("80603801_1"), contenido: "118 ml", isp: "1009C-1034/25",
+      desc: "Bruma facial vegana sin aceite, tonificante e hidratante, con flor de naranjo, salvia reequilibrante, tomillo purificante y aloe vera calmante.",
+      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
+    },
+    {
+      name: "Grab And Go", cat: "Cuerpo & Labios", real: true,
+      img: falabella("1100000928_1"), contenido: "", isp: "",
+      desc: "[PENDIENTE] — la ficha de Falabella no incluía descripción para este set/kit de viaje.",
+      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+    },
+    {
+      name: "Lip Glow", cat: "Cuerpo & Labios", real: true,
+      img: falabella("1100000930_1"), contenido: "", isp: "",
+      desc: "[PENDIENTE] — la ficha de Falabella no incluía descripción para este SKU.",
+      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+    },
+    {
+      name: "Rutina Hidratación Colágeno", cat: "Hidratación", real: true,
+      img: falabella("1100000931_1"), contenido: "", isp: "",
+      desc: "[PENDIENTE] — la ficha de Falabella no incluía descripción para este set/kit.",
+      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
     }
   ],
   "frida-kahlo": [
