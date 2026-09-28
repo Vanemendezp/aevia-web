@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog — AEVIA</title>
+<meta name="description" content="Beauty tips, test de tipo de piel y novedades de las marcas AEVIA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=4">
+<style>
+  .quiz-card { background:var(--white); border:1px solid rgba(74,71,67,.1); padding:44px; max-width:640px; margin:0 auto; }
+  .quiz-options { display:flex; flex-direction:column; gap:10px; margin-top:20px }
+  .quiz-option { text-align:left; background:var(--cream); border:1px solid rgba(74,71,67,.15); padding:14px 18px; font-size:14px; border-radius:4px; }
+  .quiz-option:hover { border-color:var(--sage) }
+  .quiz-option.selected { border-color:var(--dark); background:var(--cream-alt) }
+  .quiz-progress { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--taupe); margin-bottom:8px }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <form class="header-search" action="catalogo.html" method="get">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#4a4743" stroke-width="1.5"/><path d="m20 20-3.5-3.5" stroke="#4a4743" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <input type="search" name="buscar" placeholder="Buscar productos, marcas...">
+    </form>
+    <a href="index.html" class="brand-lockup-center">
+      <span class="logo">AEVIA</span>
+      <span class="sub">THE HOUSE OF BEAUTY BRANDS</span>
+    </a>
+    <div class="header-actions">
+      <span class="lang-toggle" title="[PENDIENTE] Sitio bilingüe — hoy solo en español">ES / EN</span>
+      <span class="icon-link" title="[PENDIENTE] Cuenta de usuario — fase 2, requiere carrito" aria-label="Mi cuenta (pendiente)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="#4a4743" stroke-width="1.4"/><path d="M5 20c1.2-3.8 4.2-5.8 7-5.8s5.8 2 7 5.8" stroke="#4a4743" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </span>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#4a4743" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a class="nav-link" data-nav="inicio" href="index.html">Inicio</a>
+    <a class="nav-link" data-nav="marcas" href="marcas.html">Marcas</a>
+    <a class="nav-link" data-nav="catalogo" href="catalogo.html">Catálogo</a>
+    <a class="nav-link" data-nav="blog" href="blog.html">Blog</a>
+    <a class="nav-link" data-nav="tiendas" href="tiendas.html">Tiendas</a>
+    <a class="nav-link" data-nav="nosotros" href="nosotros.html">Nosotros</a>
+    <a class="nav-link accent" data-nav="para-marcas" href="para-marcas.html">¿Eres una marca?</a>
+    <a href="contacto.html"><button class="btn btn-outline-dark btn-sm">Quiero cotizar</button></a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="page-intro fade-up">
+    <span class="eyebrow">Blog / Beauty tips</span>
+    <h1>Ciencia y consejos para tu rutina</h1>
+    <p class="lead">[PENDIENTE] Esta sección necesita contenido editorial real de la clienta — hoy muestra la estructura (test de piel + artículos destacados) con marcadores de posición.</p>
+  </div>
+
+  <!-- TEST DE TIPO DE PIEL -->
+  <section class="section-tight">
+    <div class="quiz-card fade-up">
+      <div class="quiz-progress" id="quiz-progress">Pregunta 1 de 3</div>
+      <h2 style="font-size:24px;margin-bottom:6px">Test: ¿cuál es tu tipo de piel?</h2>
+      <p style="font-size:13px;color:var(--olive)">3 preguntas rápidas — te sugerimos productos según el resultado. No reemplaza una evaluación dermatológica.</p>
+      <div id="quiz-body"></div>
+    </div>
+  </section>
+
+  <!-- DESTACADOS -->
+  <section class="section" style="padding-top:0">
+    <div class="section-head fade-up">
+      <div>
+        <span class="eyebrow">Destacados</span>
+        <h2 style="font-size:28px">Últimas notas</h2>
+      </div>
+    </div>
+    <div class="product-grid" id="blog-grid"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="brand-lockup">
+      <img src="img/aevia-logo-ig.jpg" alt="AEVIA" class="brand-mark">
+      <span class="brand-lockup-text">
+        <span class="logo" style="color:var(--cream)">AEVIA</span>
+        <span class="sub">THE HOUSE OF BEAUTY BRANDS</span>
+      </span>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Sitio</h4>
+        <a href="marcas.html">Marcas</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="blog.html">Blog</a>
+        <a href="tiendas.html">Tiendas</a>
+        <a href="nosotros.html">Nosotros</a>
+      </div>
+      <div class="footer-col-divider"></div>
+      <div class="footer-col">
+        <h4>&nbsp;</h4>
+        <a href="para-marcas.html">¿Eres una marca?</a>
+        <a href="contacto.html">Contacto</a>
+        <span class="footer-pending-link" title="Pendiente — página de FAQ aún no construida">Preguntas frecuentes</span>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Suscríbete</h4>
+        <p>Novedades, lanzamientos y más.</p>
+        <form class="footer-newsletter-field" onsubmit="return false">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit" aria-label="Suscribirme">&#8594;</button>
+        </form>
+        <small>[PENDIENTE] conectar a una herramienta de email marketing.</small>
+        <div class="footer-social">
+          <a href="https://instagram.com/aevia.cl" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#F7F5F0" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="#F7F5F0" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.1" fill="#F7F5F0"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AEVIA. Todos los derechos reservados. Mockup interactivo — contenido de referencia, no definitivo.</span>
+    <div class="footer-bottom-links">
+      <span>Términos y condiciones</span>
+      <span>Política de privacidad</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js?v=3"></script>
+<script src="js/main.js?v=3"></script>
+<script>
+  initNav("blog");
+  initFadeUp();
+
+  /* ---- Artículos destacados (placeholder — falta contenido real) ---- */
+  const ARTICLES = [
+    { img: poolImg("editorial", 4), tag: "[PENDIENTE]", title: "Título del artículo 1 — a definir con la clienta" },
+    { img: poolImg("science", 5), tag: "[PENDIENTE]", title: "Título del artículo 2 — a definir con la clienta" },
+    { img: poolImg("botanical", 6), tag: "[PENDIENTE]", title: "Título del artículo 3 — a definir con la clienta" },
+    { img: poolImg("sun", 7), tag: "[PENDIENTE]", title: "Título del artículo 4 — a definir con la clienta" }
+  ];
+  qs("#blog-grid").innerHTML = ARTICLES.map(a => `
+    <a class="product-card fade-up" href="#" onclick="return false" aria-disabled="true">
+      <div class="product-media"><span class="product-badge pending">${a.tag}</span><img src="${a.img}" alt=""></div>
+      <span class="product-cat">Beauty tips</span>
+      <h3 class="product-name">${a.title}</h3>
+    </a>`).join("");
+
+  /* ---- Test de tipo de piel (3 preguntas, sin backend) ---- */
+  const QUIZ = [
+    { q: "¿Cómo se siente tu piel a media tarde?", options: [
+      { t: "Tirante o reseca", v: "Piel seca" },
+      { t: "Brillante en la zona T", v: "Piel grasa" },
+      { t: "Cómoda, sin cambios", v: "Todo tipo de piel" },
+      { t: "Sensible o reactiva", v: "Piel sensible" }
+    ]},
+    { q: "¿Qué te preocupa más hoy?", options: [
+      { t: "Líneas de expresión", v: "Piel seca" },
+      { t: "Puntos negros y poros", v: "Piel grasa" },
+      { t: "Tono desigual", v: "Todo tipo de piel" },
+      { t: "Enrojecimiento", v: "Piel sensible" }
+    ]},
+    { q: "¿Cómo reacciona tu piel a productos nuevos?", options: [
+      { t: "Rara vez reacciona", v: "Todo tipo de piel" },
+      { t: "Se satura rápido / brilla", v: "Piel grasa" },
+      { t: "Se reseca o tira", v: "Piel seca" },
+      { t: "Se irrita con facilidad", v: "Piel sensible" }
+    ]}
+  ];
+  let quizStep = 0;
+  const answers = [];
+
+  function renderQuiz() {
+    const body = qs("#quiz-body");
+    if (quizStep >= QUIZ.length) {
+      const tally = {};
+      answers.forEach(a => { tally[a] = (tally[a] || 0) + 1; });
+      const result = Object.keys(tally).sort((a, b) => tally[b] - tally[a])[0];
+      qs("#quiz-progress").textContent = "Resultado";
+      body.innerHTML = `
+        <p style="font-size:15px;margin-top:16px">Tu piel parece ser: <b>${escapeHtml(result)}</b></p>
+        <a href="catalogo.html?piel=${encodeURIComponent(result)}"><button class="btn btn-primary" style="margin-top:16px">Ver productos para mi piel</button></a>
+        <button class="btn-link" style="display:block;margin-top:14px;background:none;border:none;padding:0" onclick="quizStep=0;answers.length=0;renderQuiz()">Repetir test</button>
+      `;
+      return;
+    }
+    qs("#quiz-progress").textContent = `Pregunta ${quizStep + 1} de ${QUIZ.length}`;
+    const step = QUIZ[quizStep];
+    body.innerHTML = `
+      <p style="font-size:15px;margin:16px 0 4px">${escapeHtml(step.q)}</p>
+      <div class="quiz-options">
+        ${step.options.map((o, i) => `<button class="quiz-option" data-v="${escapeHtml(o.v)}">${escapeHtml(o.t)}</button>`).join("")}
+      </div>
+    `;
+    qsa(".quiz-option", body).forEach(btn => {
+      btn.addEventListener("click", () => {
+        answers.push(btn.dataset.v);
+        quizStep++;
+        renderQuiz();
+      });
+    });
+  }
+  renderQuiz();
+</script>
+</body>
+</html>

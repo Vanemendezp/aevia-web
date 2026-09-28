@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotizar / Contacto — AEVIA</title>
+<meta name="description" content="Conversemos sobre sumar nuestras marcas (COSRX, Frida Kahlo, Hello Sunday, Mario Badescu, ToVegan) a tu tienda o cadena retail en Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <form class="header-search" action="catalogo.html" method="get">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#4a4743" stroke-width="1.5"/><path d="m20 20-3.5-3.5" stroke="#4a4743" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <input type="search" name="buscar" placeholder="Buscar productos, marcas...">
+    </form>
+    <a href="index.html" class="brand-lockup-center">
+      <span class="logo">AEVIA</span>
+      <span class="sub">THE HOUSE OF BEAUTY BRANDS</span>
+    </a>
+    <div class="header-actions">
+      <span class="lang-toggle" title="[PENDIENTE] Sitio bilingüe — hoy solo en español">ES / EN</span>
+      <span class="icon-link" title="[PENDIENTE] Cuenta de usuario — fase 2, requiere carrito" aria-label="Mi cuenta (pendiente)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="#4a4743" stroke-width="1.4"/><path d="M5 20c1.2-3.8 4.2-5.8 7-5.8s5.8 2 7 5.8" stroke="#4a4743" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </span>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#4a4743" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a class="nav-link" data-nav="inicio" href="index.html">Inicio</a>
+    <a class="nav-link" data-nav="marcas" href="marcas.html">Marcas</a>
+    <a class="nav-link" data-nav="catalogo" href="catalogo.html">Catálogo</a>
+    <a class="nav-link" data-nav="blog" href="blog.html">Blog</a>
+    <a class="nav-link" data-nav="tiendas" href="tiendas.html">Tiendas</a>
+    <a class="nav-link" data-nav="nosotros" href="nosotros.html">Nosotros</a>
+    <a class="nav-link accent" data-nav="para-marcas" href="para-marcas.html">¿Eres una marca?</a>
+    <a href="contacto.html"><button class="btn btn-outline-dark btn-sm">Quiero cotizar</button></a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="section" style="padding-bottom:0">
+    <div style="display:flex;gap:96px;flex-wrap:wrap">
+      <div style="width:380px;flex-shrink:0" class="fade-up">
+        <span class="eyebrow">Cotizar / Contacto</span>
+        <h1 style="font-size:clamp(30px,4vw,42px);margin:18px 0 20px;line-height:1.2">¿Quieres vender nuestras marcas en tu tienda?</h1>
+        <p style="font-size:15px;line-height:1.75;color:var(--olive);margin-bottom:24px">Distribuimos COSRX, Frida Kahlo, Hello Sunday, Mario Badescu y ToVegan — hoy en Falabella Chile. Si tienes una tienda, cadena retail o e-commerce y quieres sumar este portafolio, cuéntanos y conversamos sobre condiciones mayoristas.</p>
+        <p style="font-size:15px;line-height:1.75;color:var(--olive)">También puedes escribirnos directo a <a href="mailto:hola@aevia.cl" style="text-decoration:underline">hola@aevia.cl</a>.</p>
+        <p style="font-size:12.5px;margin-top:28px" class="pending-note">[PENDIENTE] Confirmar con la clienta: ¿a qué email llega este formulario? ¿se conecta a una planilla o a un CRM? ¿cuál es el plazo real de respuesta que queremos comprometer aquí?</p>
+      </div>
+
+      <div style="flex-grow:1;min-width:280px">
+        <div class="pd-note" id="contacto-context" style="display:none;max-width:none;margin-bottom:24px"></div>
+
+        <form class="form-grid fade-up" id="quote-form" novalidate>
+          <div class="field full">
+            <label for="field-empresa">Nombre de la empresa o tienda *</label>
+            <input type="text" id="field-empresa" name="empresa" data-required>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="field-tipo-negocio">Tipo de negocio *</label>
+            <select id="field-tipo-negocio" name="tipo_negocio" data-required>
+              <option value="">Selecciona una opción</option>
+              <option>Tienda por departamento</option>
+              <option>Farmacia / Perfumería</option>
+              <option>E-commerce</option>
+              <option>Supermercado</option>
+              <option>Otro</option>
+            </select>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="field-marca-interes">Marca de interés *</label>
+            <select id="field-marca-interes" name="marca_interes" data-required>
+              <option value="">Selecciona una opción</option>
+              <option>Todo el portafolio</option>
+              <option>COSRX</option>
+              <option>Frida Kahlo</option>
+              <option>Hello Sunday</option>
+              <option>Mario Badescu</option>
+              <option>ToVegan</option>
+            </select>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="field-volumen">Volumen estimado</label>
+            <select id="field-volumen" name="volumen">
+              <option value="">Selecciona una opción</option>
+              <option>Aún no lo sé / primera conversación</option>
+              <option>Piloto en una tienda</option>
+              <option>Volumen mayorista regular</option>
+              <option>Cadena con múltiples tiendas</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="field-email">Email de contacto *</label>
+            <input type="email" id="field-email" name="email" data-required>
+            <span class="field-error"></span>
+          </div>
+          <div class="field full">
+            <label for="field-interes">Producto específico (opcional)</label>
+            <input type="text" id="field-interes" name="interes" placeholder="Opcional">
+          </div>
+          <div class="field full">
+            <label for="field-mensaje">Mensaje</label>
+            <textarea id="field-mensaje" name="mensaje" placeholder="Cuéntanos brevemente qué buscas"></textarea>
+          </div>
+          <div class="field full" style="margin-top:8px">
+            <button type="submit" class="btn btn-primary" style="width:fit-content">Enviar solicitud</button>
+          </div>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <h3>Gracias — recibimos tu solicitud</h3>
+          <p>Este es un mockup: el formulario no envía datos todavía. En el sitio real, aquí confirmamos el próximo paso y el plazo de respuesta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" style="margin-top:80px">
+    <div class="trust-bar" style="background:var(--cream-alt)">
+      <div>
+        <span class="eyebrow">Hoy presentes en</span>
+        <div class="trust-name">Falabella</div>
+      </div>
+      <div class="trust-stats">
+        <div class="trust-stat"><b data-product-count>51</b><span>productos activos</span></div>
+        <div class="trust-stat"><b>5</b><span>marcas internacionales</span></div>
+        <div class="trust-stat"><b>1</b><span>retailer, más por venir</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="brand-lockup">
+      <img src="img/aevia-logo-ig.jpg" alt="AEVIA" class="brand-mark">
+      <span class="brand-lockup-text">
+        <span class="logo" style="color:var(--cream)">AEVIA</span>
+        <span class="sub">THE HOUSE OF BEAUTY BRANDS</span>
+      </span>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Sitio</h4>
+        <a href="marcas.html">Marcas</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="blog.html">Blog</a>
+        <a href="tiendas.html">Tiendas</a>
+        <a href="nosotros.html">Nosotros</a>
+      </div>
+      <div class="footer-col-divider"></div>
+      <div class="footer-col">
+        <h4>&nbsp;</h4>
+        <a href="para-marcas.html">¿Eres una marca?</a>
+        <a href="contacto.html">Contacto</a>
+        <span class="footer-pending-link" title="Pendiente — página de FAQ aún no construida">Preguntas frecuentes</span>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Suscríbete</h4>
+        <p>Novedades, lanzamientos y más.</p>
+        <form class="footer-newsletter-field" onsubmit="return false">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit" aria-label="Suscribirme">&#8594;</button>
+        </form>
+        <small>[PENDIENTE] conectar a una herramienta de email marketing.</small>
+        <div class="footer-social">
+          <a href="https://instagram.com/aevia.cl" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#F7F5F0" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="#F7F5F0" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.1" fill="#F7F5F0"/></svg>
+          </a>
+          <span class="icon-link" title="Pendiente — cuenta de Facebook por confirmar" aria-label="Facebook (pendiente)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M15 8h2V5h-2c-2.2 0-4 1.8-4 4v2H9v3h2v7h3v-7h2.5l.5-3H14V9c0-.6.4-1 1-1Z" stroke="#F7F5F0" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="icon-link" title="Pendiente — cuenta de Pinterest por confirmar" aria-label="Pinterest (pendiente)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#F7F5F0" stroke-width="1.3"/><path d="M9.5 17c1-3 1.5-5 1.5-6.5a2 2 0 1 1 4 .2c0 1.3-.8 3.3-1.2 4.3" stroke="#F7F5F0" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </span>
+          <span class="icon-link" title="Pendiente — cuenta de TikTok por confirmar" aria-label="TikTok (pendiente)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M14 4v9.5a2.5 2.5 0 1 1-2-2.45" stroke="#F7F5F0" stroke-width="1.3" stroke-linecap="round"/><path d="M14 4c.3 1.8 1.6 3.2 3.4 3.5" stroke="#F7F5F0" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AEVIA. Todos los derechos reservados. Mockup interactivo — contenido de referencia, no definitivo.</span>
+    <div class="footer-bottom-links">
+      <span>Términos y condiciones</span>
+      <span>Política de privacidad</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js?v=3"></script>
+<script src="js/main.js?v=3"></script>
+<script>
+  initNav();
+  initContactoPage();
+  initProductCount();
+  initFadeUp();
+</script>
+</body>
+</html>
