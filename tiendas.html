@@ -24,8 +24,8 @@
       <span class="sub">THE HOUSE OF BEAUTY BRANDS</span>
     </a>
     <div class="header-actions">
-      <span class="lang-toggle" title="[PENDIENTE] Sitio bilingüe — hoy solo en español">ES / EN</span>
-      <span class="icon-link" title="[PENDIENTE] Cuenta de usuario — fase 2, requiere carrito" aria-label="Mi cuenta (pendiente)">
+      <span class="lang-toggle">ES / EN</span>
+      <span class="icon-link" aria-label="Mi cuenta">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="#4a4743" stroke-width="1.4"/><path d="M5 20c1.2-3.8 4.2-5.8 7-5.8s5.8 2 7 5.8" stroke="#4a4743" stroke-width="1.4" stroke-linecap="round"/></svg>
       </span>
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
@@ -52,18 +52,27 @@
     <p class="lead">AEVIA es una vitrina B2B — no vendemos directo desde este sitio. Si buscas comprar un producto hoy, estos son los puntos de venta donde encontrar nuestras marcas.</p>
   </div>
 
+  <section class="cta-band fade-up" style="padding:44px var(--gutter)">
+    <p style="font-size:15px;margin:0">Encuentra nuestros productos en los <b>Beauty F de Falabella</b></p>
+  </section>
+
   <section class="section">
-    <div class="value-grid fade-up" style="max-width:900px">
-      <div class="value-card" style="display:flex;flex-direction:column;gap:14px">
-        <span class="eyebrow">Punto de venta activo</span>
-        <h3 style="font-size:22px">Falabella Chile</h3>
-        <p>Las 5 marcas de nuestro portafolio — COSRX, Frida Kahlo, Hello Sunday, Mario Badescu y ToVegan — están disponibles hoy en Falabella, tiendas físicas y falabella.com.</p>
-        <a href="https://www.falabella.com" target="_blank" rel="noopener"><button class="btn btn-outline-dark btn-sm" style="width:fit-content">Comprar en Falabella ↗</button></a>
+    <div class="pillars fade-up" style="grid-template-columns:repeat(3, minmax(0,1fr))">
+      <div class="pillar-card" style="display:flex;flex-direction:column;gap:10px">
+        <div class="pillar-dot" style="background:#4a4743"></div>
+        <h3>Falabella.com</h3>
+        <p>Las 5 marcas de nuestro portafolio — COSRX, Frida Kahlo, Hello Sunday, Mario Badescu y ToVegan — disponibles online hoy.</p>
+        <a href="https://www.falabella.com" target="_blank" rel="noopener" style="margin-top:4px"><button class="btn btn-outline-dark btn-sm" style="width:fit-content">Comprar en Falabella ↗</button></a>
       </div>
-      <div class="value-card" style="display:flex;flex-direction:column;gap:14px;background:var(--cream-alt);border:none">
+      <div class="pillar-card" style="display:flex;flex-direction:column;gap:10px">
+        <div class="pillar-dot" style="background:#8a988b"></div>
+        <h3>Beauty F Falabella</h3>
+        <p>Presencia física en corners Beauty F dentro de tiendas Falabella.</p>
+      </div>
+      <div class="pillar-card" style="display:flex;flex-direction:column;gap:10px;background:var(--cream-alt);border:none">
         <span class="pending-chip" style="width:fit-content">Pendiente</span>
-        <h3 style="font-size:22px">Más puntos de venta</h3>
-        <p>[PENDIENTE] Este sitio contemplará un mapa/listado de tiendas asociadas a medida que sumemos nuevos retailers (ver página "¿Eres retailer?" en Contacto). Por ahora, Falabella es el único canal activo.</p>
+        <h3>Más puntos de venta</h3>
+        <p>Listado de sucursales por confirmar con la clienta. Iremos sumando nuevos puntos de venta a medida que se incorporen nuevos retailers al portafolio.</p>
       </div>
     </div>
   </section>
@@ -108,7 +117,6 @@
           <input type="email" placeholder="Tu correo electrónico" required>
           <button type="submit" aria-label="Suscribirme">&#8594;</button>
         </form>
-        <small>[PENDIENTE] conectar a una herramienta de email marketing.</small>
         <div class="footer-social">
           <a href="https://instagram.com/aevia.cl" target="_blank" rel="noopener" aria-label="Instagram">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#F7F5F0" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="#F7F5F0" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.1" fill="#F7F5F0"/></svg>
@@ -126,8 +134,8 @@
   </div>
 </footer>
 
-<script src="js/data.js?v=3"></script>
-<script src="js/main.js?v=3"></script>
+<script src="js/data.js?v=4"></script>
+<script src="js/main.js?v=5"></script>
 <script>
   initNav("tiendas");
   initFadeUp();

@@ -236,7 +236,13 @@ function initProductoPage() {
   if (product.isp) subtitleParts.push(`Resolución ISP ${product.isp}`);
   qs("#pd-subtitle").textContent = subtitleParts.length
     ? subtitleParts.join(" · ")
-    : "[PENDIENTE] — ficha técnica (formato / contenido neto) a confirmar con la marca.";
+    : "";
+
+  const buyLink = qs("#pd-buy-link");
+  const skuMatch = product.gallery[0].match(/falabellaCL\/(\d+)_/);
+  buyLink.href = skuMatch
+    ? `https://www.falabella.com/falabella-cl/search?Ntt=${skuMatch[1]}`
+    : "https://www.falabella.com";
 
   const descEl = qs("#pd-desc");
   if (product.desc) {
@@ -280,13 +286,13 @@ function initProductoPage() {
   const tabUso = qs("#tab-panel-uso");
   tabDesc.innerHTML = product.desc
     ? escapeHtml(product.desc)
-    : `<span class="pending-note">[PENDIENTE] Descripción larga — a solicitar a ${escapeHtml(brand.name)}.</span>`;
+    : `<span class="pending-note">Descripción por confirmar con ${escapeHtml(brand.name)}.</span>`;
   tabIng.innerHTML = product.ing
     ? escapeHtml(product.ing)
-    : `<span class="pending-note">[PENDIENTE] Listado de ingredientes / INCI — obligatorio antes de publicar en producción.</span>`;
+    : `<span class="pending-note">Listado de ingredientes por confirmar con ${escapeHtml(brand.name)}.</span>`;
   tabUso.innerHTML = product.uso
     ? escapeHtml(product.uso)
-    : `<span class="pending-note">[PENDIENTE] Modo de uso — a solicitar a ${escapeHtml(brand.name)}.</span>`;
+    : `<span class="pending-note">Modo de uso por confirmar con ${escapeHtml(brand.name)}.</span>`;
   qsa(".tab-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       qsa(".tab-btn").forEach(b => b.classList.remove("active"));

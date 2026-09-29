@@ -109,8 +109,8 @@ const BRANDS = [
     slug: "cosrx",
     name: "COSRX",
     pillar: "Cosmocéutical",
-    tagline: "[PENDIENTE] — tagline oficial de la marca",
-    description: "COSRX es una marca coreana enfocada en ingredientes activos concentrados y fórmulas minimalistas, con foco en resultados dermatológicamente respaldados. [PENDIENTE — reemplazar por la descripción oficial de marca que entregó COSRX a la clienta].",
+    tagline: "Skincare coreano de ingredientes activos",
+    description: "COSRX es una marca coreana enfocada en ingredientes activos concentrados y fórmulas minimalistas, con foco en resultados dermatológicamente respaldados.",
     pool: "science",
     poolAlt: "product"
   },
@@ -118,8 +118,8 @@ const BRANDS = [
     slug: "frida-kahlo",
     name: "Frida Kahlo",
     pillar: "Clean Beauty",
-    tagline: "[PENDIENTE] — tagline oficial de la marca",
-    description: "Frida Kahlo es, en el catálogo real de Falabella, una línea de perfumería (Eau de Parfum) inspirada en la artista — no una línea de skincare como se asumió en una versión anterior de este mockup. [PENDIENTE — reemplazar por la descripción oficial de marca].",
+    tagline: "Perfumería inspirada en la artista",
+    description: "Frida Kahlo es una línea de perfumería (Eau de Parfum) inspirada en la vida y obra de la artista.",
     pool: "rose",
     poolAlt: "product"
   },
@@ -127,8 +127,8 @@ const BRANDS = [
     slug: "hello-sunday",
     name: "Hello Sunday",
     pillar: "Clean Beauty",
-    tagline: "[PENDIENTE] — tagline oficial de la marca",
-    description: "Hello Sunday se especializa en protección solar diaria con fórmulas ligeras — rostro, ojos, labios y manos. [PENDIENTE — reemplazar por la descripción oficial de marca que entregó Hello Sunday a la clienta].",
+    tagline: "Protección solar diaria para toda la familia",
+    description: "Hello Sunday se especializa en protección solar diaria con fórmulas ligeras — rostro, ojos, labios y manos.",
     pool: "sun",
     poolAlt: "product"
   },
@@ -136,8 +136,8 @@ const BRANDS = [
     slug: "mario-badescu",
     name: "Mario Badescu",
     pillar: "Cosmocéutical",
-    tagline: "[PENDIENTE] — tagline oficial de la marca",
-    description: "Mario Badescu es una marca neoyorquina histórica de skincare, reconocida por clásicos como su Facial Spray y sus lociones tratantes. [PENDIENTE — reemplazar por la descripción oficial de marca que entregó Mario Badescu a la clienta].",
+    tagline: "Skincare neoyorquino, clásico y efectivo",
+    description: "Mario Badescu es una marca neoyorquina histórica de skincare, reconocida por clásicos como su Facial Spray y sus lociones tratantes.",
     pool: "rose",
     poolAlt: "product"
   },
@@ -145,8 +145,8 @@ const BRANDS = [
     slug: "tovegan",
     name: "ToVegan",
     pillar: "Inner Beauty",
-    tagline: "[PENDIENTE] — tagline oficial de la marca",
-    description: "ToVegan desarrolla cosmética 100% vegana y cruelty-free. [PENDIENTE — reemplazar por la descripción oficial de marca que entregó ToVegan a la clienta].",
+    tagline: "Cosmética 100% vegana y cruelty-free",
+    description: "ToVegan desarrolla cosmética 100% vegana y cruelty-free, formulada sin ingredientes de origen animal.",
     pool: "botanical",
     poolAlt: "hands"
   }
@@ -204,7 +204,7 @@ const RAW_PRODUCTS = {
       name: "BHA Blackhead Power Liquid", cat: "Sérums & Tratamientos", real: true,
       img: falabella("80603788_1"), contenido: "100 ml", isp: "",
       desc: "Tratamiento con ácido salicílico (BHA) para combatir puntos negros y exceso de sebo en pieles grasas. Exfolia suavemente.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Usar como tónico o esencia tras la limpieza, 2-3 veces por semana, aumentando gradualmente según tolerancia de la piel."
     },
     {
@@ -255,106 +255,106 @@ const RAW_PRODUCTS = {
       name: "Seaweed Night Cream", cat: "Hidratación", real: true,
       img: falabella("80603812_1"), contenido: "", isp: "1009C-1040/25",
       desc: "Crema de noche con colágeno marino, ácido hialurónico y extracto de Fucus (alga rica en minerales) para suavizar y restaurar la piel mientras duermes.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar todas las noches después de limpiar y tonificar la piel."
     },
     {
       name: "Hyaluronic Dew Cream", cat: "Hidratación", real: true,
       img: falabella("80603791_1"), contenido: "", isp: "1009C-1036/25",
       desc: "Crema ligera y sedosa con ácido hialurónico y aloe vera calmante, más esqualano reparador, para hidratación intensa.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar sobre rostro limpio, mañana y/o noche, como paso final de hidratación."
     },
     {
       name: "Drying Lotion", cat: "Sérums & Tratamientos", real: true,
       img: falabella("80603799_1"), contenido: "", isp: "",
       desc: "Tratamiento nocturno vegano con ácido salicílico para imperfecciones puntuales — un clásico de la marca desde 1967.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Cada noche, tras limpiar y tonificar: sumergir un hisopo en el sedimento rosado del fondo del frasco (sin agitar) y aplicar solo sobre la imperfección, sin frotar. Dejar secar y enjuagar por la mañana."
     },
     {
       name: "Gentle Foaming Cleanser", cat: "Limpieza", real: true,
       img: falabella("80603811_1"), contenido: "", isp: "1009/08",
       desc: "Limpiador facial en espuma ligera que elimina maquillaje, exceso de grasa e impurezas sin resecar.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar sobre rostro húmedo, hacer espuma, masajear y enjuagar."
     },
     {
       name: "Lip Balm", cat: "Cuerpo & Labios", real: true,
       img: falabella("80603823_1"), contenido: "10 g", isp: "",
       desc: "Bálsamo labial vegano con aloe vera para hidratación profunda y duradera.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar sobre los labios cuantas veces sea necesario."
     },
     {
       name: "Lip Mask With Acai N Vanilla", cat: "Cuerpo & Labios", real: true,
       img: falabella("80603793_1"), contenido: "", isp: "",
       desc: "Mascarilla labial vegana con acai y vainilla que nutre profundamente, dejando los labios suaves e hidratados.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar una capa generosa sobre los labios; dejar actuar y no retirar (se absorbe)."
     },
     {
       name: "Acai N Vanilla Lip Balm", cat: "Cuerpo & Labios", real: true,
       img: falabella("80603802_1"), contenido: "", isp: "",
       desc: "Bálsamo labial vegano con aceite de coco, acai y vainilla: hidrata y suaviza labios secos.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar directamente sobre los labios."
     },
     {
       name: "Spritz Mist Glow (set de 3 brumas)", cat: "Tónicos & Esencias", real: true,
       img: falabella("80603807_1"), contenido: "", isp: "",
       desc: "Set de tres brumas faciales veganas para refrescar, hidratar y dar luminosidad — el complemento perfecto de la rutina diaria.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
     },
     {
       name: "Facial Spray Aloe & Cucumber & Green Tea", cat: "Tónicos & Esencias", real: true,
       img: falabella("80603813_1"), contenido: "118 ml", isp: "1009C-1032/25",
       desc: "Bruma facial refrescante y vegana con aloe vera calmante, té verde, agua de menta rica en antioxidantes y pepino hidratante.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
     },
     {
       name: "Facial Spray Aloe & Chamomile", cat: "Tónicos & Esencias", real: true,
       img: falabella("80603792_1"), contenido: "118 ml", isp: "1009C-1031/25",
       desc: "Bruma facial vegana con antioxidantes y vitamina C, lavanda calmante, aloe vera hidratante, tomillo purificante y extracto de alga marina.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
     },
     {
       name: "Facial Spray Aloe & Coconut", cat: "Tónicos & Esencias", real: true,
       img: falabella("80603806_1"), contenido: "118 ml", isp: "1009C-1030/25",
       desc: "Bruma facial vegana que hidrata piel delicada y seca con ácido hialurónico, agua de coco y extractos adaptógenos de plantas y raíces.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
     },
     {
       name: "Facial Spray Aloe, Sage & Orange", cat: "Tónicos & Esencias", real: true,
       img: falabella("80603801_1"), contenido: "118 ml", isp: "1009C-1034/25",
       desc: "Bruma facial vegana sin aceite, tonificante e hidratante, con flor de naranjo, salvia reequilibrante, tomillo purificante y aloe vera calmante.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Vaporizar sobre el rostro durante el día o antes de la crema hidratante."
     },
     {
       name: "Grab And Go", cat: "Cuerpo & Labios", real: true,
       img: falabella("1100000928_1"), contenido: "", isp: "",
-      desc: "[PENDIENTE] — la ficha de Falabella no incluía descripción para este set/kit de viaje.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
-      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+      desc: "Descripción por confirmar con la marca.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
+      uso: "Modo de uso por confirmar con la marca."
     },
     {
       name: "Lip Glow", cat: "Cuerpo & Labios", real: true,
       img: falabella("1100000930_1"), contenido: "", isp: "",
-      desc: "[PENDIENTE] — la ficha de Falabella no incluía descripción para este SKU.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
-      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+      desc: "Descripción por confirmar con la marca.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
+      uso: "Modo de uso por confirmar con la marca."
     },
     {
       name: "Rutina Hidratación Colágeno", cat: "Hidratación", real: true,
       img: falabella("1100000931_1"), contenido: "", isp: "",
-      desc: "[PENDIENTE] — la ficha de Falabella no incluía descripción para este set/kit.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
-      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+      desc: "Descripción por confirmar con la marca.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
+      uso: "Modo de uso por confirmar con la marca."
     }
   ],
   "frida-kahlo": [
@@ -385,7 +385,7 @@ const RAW_PRODUCTS = {
       name: "The One That's A Serum SPF50", cat: "Protección Solar", real: true,
       img: falabella("80603817_1"), contenido: "", isp: "1009C-1041/25",
       desc: "Protector solar facial en formato sérum, textura ligera y sedosa de absorción rápida, sin residuo graso — el producto insignia de la marca.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar como último paso de la rutina de día. Reaplicar según exposición solar."
     },
     {
@@ -406,42 +406,42 @@ const RAW_PRODUCTS = {
       name: "The Mauve One — Bálsamo labial SPF50", cat: "Protección Solar", real: true,
       img: falabella("80603808_1"), contenido: "", isp: "1009C-1046/25",
       desc: "Bálsamo labial con SPF 50 y un sutil tono malva, enriquecido con ácido hialurónico.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar sobre los labios y reaplicar durante el día."
     },
     {
       name: "Invisible Sun Stick SPF30", cat: "Protección Solar", real: true,
       img: falabella("80603795_1"), contenido: "", isp: "1009C-1044/25",
       desc: "Stick solar portátil e invisible, ligero y no graso, para retoques durante el día.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar sobre la piel para protección solar. Ideal para retoques rápidos."
     },
     {
       name: "The One For Your Eyes SPF50", cat: "Protección Solar", real: true,
       img: falabella("80603819_1"), contenido: "", isp: "1009C-1045/25",
       desc: "Protector solar específico para el contorno de ojos, previene daño solar y líneas de expresión.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar suavemente en el contorno de ojos como parte de la rutina de día."
     },
     {
       name: "The One For Your Lips SPF50", cat: "Protección Solar", real: true,
       img: falabella("80603818_1"), contenido: "", isp: "1009C-1043/25",
       desc: "Protector labial con SPF 50, barrera invisible contra el daño solar, mantiene los labios hidratados.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar sobre los labios y reaplicar durante el día."
     },
     {
       name: "The One For Your Hands SPF30", cat: "Protección Solar", real: true,
       img: falabella("80603797_1"), contenido: "", isp: "1009C-1042/25",
       desc: "Protector solar de amplio espectro para manos, uso diario, fórmula ligera de rápida absorción.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Aplicar sobre las manos, reaplicar tras lavarlas o según exposición solar."
     },
     {
       name: "The Everyday Essentials (set labios, manos y rostro)", cat: "Protección Solar", real: true,
       img: falabella("80603824_1"), contenido: "Labios 15 ml, manos 30 ml, sérum 30 ml", isp: "1009C-1041/25 · 1009C-1042/25 · 1009C-1043/25",
       desc: "Set con protección solar completa para rostro, labios y manos — la introducción ideal a la rutina Hello Sunday.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este set.",
+      ing: "Listado de ingredientes por confirmar con la marca.",
       uso: "Ver modo de uso de cada producto individual incluido en el set."
     }
   ],
@@ -451,7 +451,7 @@ const RAW_PRODUCTS = {
       img: falabella("80756452_1"), contenido: "150 ml", isp: "1009C-1157/26",
       desc: "Tónico facial vegano con extractos botánicos (hibisco, rosa mosqueta, arándano) para hidratación profunda y cutis radiante.",
       ing: "Water, Butylene Glycol, Glycerin, Hibiscus Sabdariffa Flower Extract, Adenosine, Panthenol, Camellia Japonica Flower Extract (lista completa disponible en Falabella.com).",
-      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+      uso: "Modo de uso por confirmar con la marca."
     },
     {
       name: "Pink Enriched Eyelash Serum", cat: "Sérums & Tratamientos", real: true,
@@ -464,29 +464,29 @@ const RAW_PRODUCTS = {
       name: "Crema Facial Glow Up", cat: "Hidratación", real: true,
       img: falabella("80756454_1"), contenido: "", isp: "1009C-1159/26",
       desc: "Crema facial hidratante de textura ligera para todo tipo de piel, con efecto luminoso.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
-      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+      ing: "Listado de ingredientes por confirmar con la marca.",
+      uso: "Modo de uso por confirmar con la marca."
     },
     {
       name: "Protector Solar Facial (Bruma Yellow)", cat: "Protección Solar", real: true,
       img: falabella("80756453_1"), contenido: "", isp: "1009C-1161/26",
       desc: "Protector solar facial en formato bruma ligera, defensa invisible contra los rayos UV.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
-      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+      ing: "Listado de ingredientes por confirmar con la marca.",
+      uso: "Modo de uso por confirmar con la marca."
     },
     {
       name: "Bálsamo Limpiador Nutritivo", cat: "Limpieza", real: true,
       img: falabella("80756455_1"), contenido: "", isp: "1009C-1160/26",
       desc: "Bálsamo limpiador en formato crema que disuelve maquillaje e impurezas sin dejar sensación grasa.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
-      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+      ing: "Listado de ingredientes por confirmar con la marca.",
+      uso: "Modo de uso por confirmar con la marca."
     },
     {
       name: "Espuma Limpiadora Equilibrante", cat: "Limpieza", real: true,
       img: falabella("80756456_1"), contenido: "", isp: "1009/08",
       desc: "Limpiador facial en espuma para uso diario, textura que se transforma para disolver impurezas.",
-      ing: "[PENDIENTE] — ficha de Falabella no listaba INCI completo para este SKU.",
-      uso: "[PENDIENTE] — ficha de Falabella no detallaba modo de uso para este SKU."
+      ing: "Listado de ingredientes por confirmar con la marca.",
+      uso: "Modo de uso por confirmar con la marca."
     }
   ]
 };
